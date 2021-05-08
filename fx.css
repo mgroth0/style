@@ -1,0 +1,408 @@
+/*Official note from JavaFX:*/
+/*It is possible to use the JavaFX class name as a type selector, however, such use is not recommended. For example, it is possible to specify styles for a ToggleButton using the syntax "ToggleButton { ... }". Such usage is not recommended because the name used to match the type selector is the actual concrete class name used in the JavaFX program. This class name can change in the case of subclassing. If the application were to subclass the ToggleButton class, these styles would no longer apply.
+*/
+
+.main {
+    -fx-fill: lightgray;
+}
+
+/*.root {*/
+/*    LABEL_PADDING_TOP: 0;*/
+/*    LABEL_PADDING_RIGHT: 0;*/
+/*    LABEL_PADDING_BOTTOM: 0;*/
+/*    LABEL_PADDING_LEFT: 5;*/
+/*}*/
+
+.tab-pane *.tab-header-background {
+    -fx-background-color: #000000;
+}
+
+
+TabPane,
+ListView,
+TableView,
+TreeTableView,
+TreeView,
+FlowPane,
+VBox,
+HBox,
+Pane,
+.hbox,
+.vbox,
+BrainStormPane,
+    /*ControllableBrainStormPane,*/
+NodePane,
+TextField,
+.scroll-pane,
+.scroll-pane .content,
+ScrollPane {
+    /*-fx-background-color: transparent;*/
+    -fx-background-color: #000000;
+    /*-fx-border-color: blue;*/
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent; /*thank god!*/
+}
+
+MDialog {
+    -fx-background-color: transparent;
+}
+
+
+/*VBox {*/
+/*    -fx-border-color: blue;*/
+/*}*/
+
+TextArea .content {
+    -fx-background-color: #000000;
+
+}
+
+/*TextArea,*/
+/*TextArea .content,*/
+/*
+
+
+-area .content,*/
+.text-area, .text-area:focused
+    /*.text-area > .scroll-pane,*/
+    /*.text-area > .content,*/
+    /*.text-field,*/
+    /*.text-field:focused*/
+{
+    /*-fx-border-width: 0px;*/
+    /*-fx-border-color: black;*/
+    -fx-text-box-border: transparent;
+    -fx-focus-color: transparent;
+    -fx-background-color: black;
+}
+
+/*.text-field, .text-field:focused {*/
+/**/
+/*}*/
+
+/*.text-area > .scroll-pane {*/
+/*    -fx-border-width: 0px;*/
+/*}*/
+
+/*GridPane {*/
+/*    -fx-border-width: 0px;*/
+/*    -fx-border-color: black;*/
+/*}*/
+
+.menu-bar {
+    -fx-background-color: #000000;
+}
+
+.context-menu {
+    -fx-background-color: #000000;
+    -fx-border-color: #111111;
+}
+
+/*.context-menu:selected {*/
+/*    -fx-background-color: #000033;*/
+/*    -fx-border-color: #000066;*/
+/*}*/
+/*.context-menu:hover {*/
+/*    -fx-background-color: #000033;*/
+/*    -fx-border-color: #000066;*/
+/*}*/
+
+
+.menu-item .label {
+    -fx-text-fill: lightgrey;
+}
+
+.menu-item:hover, .menu-item:selected, .menu-item:focused {
+    -fx-background-color: #000033;
+    /*-fx-border-color: #000066;*/
+}
+
+
+.tree-table-view .column-header,
+.table-view .column-header {
+    -fx-border-color: white;
+    -fx-border-width: 0 .1 0 0;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler,
+.tree-table-view .column-header,
+.tree-table-view .column-header .filler,
+.tree-table-view .column-header-background .filler {
+
+    /*-fx-text-fill: orange;*/
+    /*-fx-background-color: blue;*/
+    /*-fx-text-background-color: red*/
+    -fx-background-color: #001100;
+}
+
+.table-row-cell, .tree-table-row-cell {
+    -fx-table-cell-border-color: #111111;
+}
+
+
+.list-cell:even,
+TableRow:even,
+TreeTableRow:even {
+    -fx-control-inner-background: #222222;
+    -fx-text-fill: lightgrey;
+}
+
+.list-cell:odd,
+TableRow:odd,
+TreeTableRow:odd {
+    -fx-control-inner-background: #111111;
+    -fx-text-fill: lightgrey;
+}
+
+.list-cell:empty,
+TableRow:empty,
+TreeTableRow:empty,
+ListCell,
+TableRowCell,
+TreeTableRowCell {
+    -fx-background-color: #000000;
+    -fx-text-fill: lightgrey;
+}
+
+.list-cell:filled:hover,
+TableRow:filled:hover,
+TreeTableRow:filled:hover {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+}
+
+.list-cell:selected,
+TableRow:selected,
+TreeTableRow:selected,
+.list-cell:selected:hover,
+TableRow:selected:hover,
+TreeTableRow:selected:hover {
+    -fx-text-fill: white;
+    -fx-text-background-color: white; /*need this for text color to stay right when not focused*/
+    -fx-background-color: #333355;
+}
+
+
+Tab,
+Button,
+.ResourceButton {
+    -fx-background-color: #000033;
+    /*-fx-text-fill: blue;*/
+    /*-fx-fill: blue;*/
+}
+
+
+Tab:hover,
+Button:hover,
+.ResourceButton:hover {
+    -fx-background-color: #000066;
+    -fx-text-fill: white;
+}
+
+.ConfirmButton {
+    -fx-background-color: blue;
+}
+
+
+.tab {
+    -fx-background-color: #111111;
+    -fx-focus-color: transparent;
+}
+
+.tab:selected {
+    -fx-background-color: #222222;
+}
+
+.tab:hover {
+    -fx-background-color: #333333;
+}
+
+Text {
+    -fx-fill: lightgray;
+}
+
+.tab .tab-label, Label, Button, .ResourceButton, TextArea {
+    -fx-text-fill: lightgray;
+    /*-fx-text-fill: blue;*/
+    /*-fx-fill: blue;*/
+}
+
+TextField {
+    -fx-prompt-text-fill: gray;
+    -fx-text-fill: lightgray;
+}
+
+.text-area .content {
+    -fx-background-radius: 0;
+}
+
+.separator *.line {
+    -fx-background-color: #333333;
+    -fx-border-style: solid;
+    -fx-border-width: 0px;
+}
+
+.scroll-bar {
+    -fx-background-color: #000000;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track,
+Slider:horizontal .track,
+Slider:vertical .track {
+    -fx-background-color: #111111;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb,
+Slider:horizontal .thumb,
+Slider:vertical .thumb {
+    -fx-background-color: #222222;
+}
+
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-background-color: #222222;
+}
+
+
+.CANNOT_EDIT_CHILDREN {
+    -fx-text-fill: #7e0000;
+    -fx-fill: #7e0000;
+}
+
+.CAN_EDIT_CHILDREN {
+    -fx-text-fill: #5d2346;
+    -fx-fill: #5d2346;
+}
+
+.EDITABLE_IN_PLACE {
+    -fx-text-fill: #0f005a;
+    -fx-fill: #0f005a;
+}
+
+.MOVABLE {
+    -fx-text-fill: #0795c3;
+    -fx-fill: #0795c3;
+}
+
+.BoltPaneTextArea {
+    -fx-border-color: transparent;
+    /*<<*/
+}
+
+/*.BrainStormSettingsPane {*/
+/*    -fx-background-color: #000000;*/
+/*}*/
+
+BrainStormPane {
+    /*-fx-background-color: #000000;*/
+    /*-fx-padding: 0, 20, 0, 10; !*top, right, bottom, left*!*/
+}
+
+
+.tag {
+    -fx-text-fill: #0746c3;
+    -fx-fill: #0746c3; /*since I use text now not label, this is the one that matters*/
+}
+
+.tag:hover {
+    -fx-text-fill: #5d89e7;
+    -fx-fill: #5d89e7; /*since I use text now not label, this is the one that matters*/
+}
+
+.datetag {
+    -fx-text-fill: orange;
+    -fx-fill: orange; /*since I use text now not label, this is the one that matters*/
+}
+
+.flowTypeTag {
+    -fx-text-fill: purple;
+    -fx-fill: purple; /*since I use text now not label, this is the one that matters*/
+}
+
+.specialTag {
+    -fx-font-weight: bold;
+}
+
+.redText {
+    -fx-text-fill: red;
+    -fx-fill: red;
+}
+
+.greenText {
+    -fx-text-fill: green;
+    -fx-fill: green;
+}
+
+.yellowText {
+    -fx-text-fill: yellow;
+    -fx-fill: yellow;
+}
+
+.blueText {
+    -fx-text-fill: blue;
+    -fx-fill: blue;
+}
+
+.darkGreyText {
+    -fx-text-fill: darkgrey;
+    -fx-fill: darkgrey;
+}
+
+
+ChoiceBox {
+    -fx-background-color: #222222;
+    -fx-text-fill: #0795c3;
+}
+
+
+.check-box .box {
+
+    -fx-background-color: black;
+    -fx-border-color: grey;
+    -fx-border-radius: 3px;
+
+}
+
+.check-box:selected .mark {
+
+    -fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+    -fx-background-color: #0f005a;
+}
+
+WebView, .web-view {
+    -fx-background-color: #000000;
+}
+
+
+.chart-plot-background {
+    -fx-background-color: #000000;
+}
+
+.chart-legend {
+    -fx-background-color: #000000;
+}
+
+.default-color0.chart-line-symbol {
+    -fx-background-color: CHART_COLOR_1, black;
+}
+
+.default-color1.chart-line-symbol {
+    -fx-background-color: CHART_COLOR_2, black;
+}
+
+
+.greenBackground {
+    -fx-background-color: green;
+    /*-fx-text-fill: black;*/
+}
