@@ -49,6 +49,9 @@ NodePane
 .nodeTextField {
     -fx-background-color: #000000;
 }
+.nodeTextField:focused {
+    -fx-background-color: #000000;
+}
 
 /*.scroll-pane > .viewport {
     -fx-background-color: transparent; !*thank god!*!
