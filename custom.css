@@ -46,6 +46,10 @@ NodePane
     /*-fx-border-color: blue;*/
 }
 
+.nodeTextField {
+    -fx-background-color: #000000;
+}
+
 /*.scroll-pane > .viewport {
     -fx-background-color: transparent; !*thank god!*!
 }*/
