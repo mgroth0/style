@@ -2,23 +2,27 @@
 /*It is possible to use the JavaFX class name as a type selector, however, such use is not recommended. For example, it is possible to specify styles for a ToggleButton using the syntax "ToggleButton { ... }". Such usage is not recommended because the name used to match the type selector is the actual concrete class name used in the JavaFX program. This class name can change in the case of subclassing. If the application were to subclass the ToggleButton class, these styles would no longer apply.
 */
 
-.main {
+/*.main {
     -fx-fill: lightgray;
-}
+}*/
 
-/*.root {*/
-/*    LABEL_PADDING_TOP: 0;*/
-/*    LABEL_PADDING_RIGHT: 0;*/
-/*    LABEL_PADDING_BOTTOM: 0;*/
-/*    LABEL_PADDING_LEFT: 5;*/
-/*}*/
+/*.root {
+    !*    LABEL_PADDING_TOP: 0;*!
+    !*    LABEL_PADDING_RIGHT: 0;*!
+    !*    LABEL_PADDING_BOTTOM: 0;*!
+    !*    LABEL_PADDING_LEFT: 5;*!
+    -fx-pressed-base: #000033;
+    -fx-hover-base: lightgrey;
+}*/
 
+/*
 .tab-pane *.tab-header-background {
     -fx-background-color: #000000;
 }
+*/
 
 
-TabPane,
+/*TabPane,
 ListView,
 TableView,
 TreeTableView,
@@ -28,22 +32,23 @@ VBox,
 HBox,
 Pane,
 .hbox,
-.vbox,
+.vbox,*/
 BrainStormPane,
     /*ControllableBrainStormPane,*/
-NodePane,
-TextField,
+NodePane
+/*TextField,
 .scroll-pane,
-.scroll-pane .content,
-ScrollPane {
+.scroll-pane .content,*/
+/*ScrollPane*/ {
     /*-fx-background-color: transparent;*/
     -fx-background-color: #000000;
+    /*-fx-background-color: blue;*/
     /*-fx-border-color: blue;*/
 }
 
-.scroll-pane > .viewport {
-    -fx-background-color: transparent; /*thank god!*/
-}
+/*.scroll-pane > .viewport {
+    -fx-background-color: transparent; !*thank god!*!
+}*/
 
 MDialog {
     -fx-background-color: transparent;
@@ -54,10 +59,12 @@ MDialog {
 /*    -fx-border-color: blue;*/
 /*}*/
 
+/*
 TextArea .content {
     -fx-background-color: #000000;
 
 }
+*/
 
 /*TextArea,*/
 /*TextArea .content,*/
@@ -65,18 +72,18 @@ TextArea .content {
 
 
 -area .content,*/
-.text-area, .text-area:focused
-    /*.text-area > .scroll-pane,*/
-    /*.text-area > .content,*/
-    /*.text-field,*/
-    /*.text-field:focused*/
+/*.text-area, .text-area:focused
+    !*.text-area > .scroll-pane,*!
+    !*.text-area > .content,*!
+    !*.text-field,*!
+    !*.text-field:focused*!
 {
-    /*-fx-border-width: 0px;*/
-    /*-fx-border-color: black;*/
+    !*-fx-border-width: 0px;*!
+    !*-fx-border-color: black;*!
     -fx-text-box-border: transparent;
     -fx-focus-color: transparent;
     -fx-background-color: black;
-}
+}*/
 
 /*.text-field, .text-field:focused {*/
 /**/
@@ -91,14 +98,14 @@ TextArea .content {
 /*    -fx-border-color: black;*/
 /*}*/
 
-.menu-bar {
+/*.menu-bar {
     -fx-background-color: #000000;
 }
 
 .context-menu {
     -fx-background-color: #000000;
     -fx-border-color: #111111;
-}
+}*/
 
 /*.context-menu:selected {*/
 /*    -fx-background-color: #000033;*/
@@ -109,14 +116,14 @@ TextArea .content {
 /*    -fx-border-color: #000066;*/
 /*}*/
 
-
+/*
 .menu-item .label {
     -fx-text-fill: lightgrey;
 }
 
 .menu-item:hover, .menu-item:selected, .menu-item:focused {
     -fx-background-color: #000033;
-    /*-fx-border-color: #000066;*/
+    !*-fx-border-color: #000066;*!
 }
 
 
@@ -133,12 +140,12 @@ TextArea .content {
 .tree-table-view .column-header .filler,
 .tree-table-view .column-header-background .filler {
 
-    /*-fx-text-fill: orange;*/
-    /*-fx-background-color: blue;*/
-    /*-fx-text-background-color: red*/
+    !*-fx-text-fill: orange;*!
+    !*-fx-background-color: blue;*!
+    !*-fx-text-background-color: red*!
     -fx-background-color: #001100;
-}
-
+}*/
+/*
 .table-row-cell, .tree-table-row-cell {
     -fx-table-cell-border-color: #111111;
 }
@@ -182,13 +189,13 @@ TreeTableRow:selected,
 TableRow:selected:hover,
 TreeTableRow:selected:hover {
     -fx-text-fill: white;
-    -fx-text-background-color: white; /*need this for text color to stay right when not focused*/
+    -fx-text-background-color: white; !*need this for text color to stay right when not focused*!
     -fx-background-color: #333355;
 }
 
 
 Tab,
-Button,
+Button,*/
 .ResourceButton {
     -fx-background-color: #000033;
     /*-fx-text-fill: blue;*/
@@ -196,8 +203,8 @@ Button,
 }
 
 
-Tab:hover,
-Button:hover,
+/*Tab:hover,
+Button:hover,*/
 .ResourceButton:hover {
     -fx-background-color: #000066;
     -fx-text-fill: white;
@@ -208,7 +215,7 @@ Button:hover,
 }
 
 
-.tab {
+/*.tab {
     -fx-background-color: #111111;
     -fx-focus-color: transparent;
 }
@@ -227,8 +234,8 @@ Text {
 
 .tab .tab-label, Label, Button, .ResourceButton, TextArea {
     -fx-text-fill: lightgray;
-    /*-fx-text-fill: blue;*/
-    /*-fx-fill: blue;*/
+    !*-fx-text-fill: blue;*!
+    !*-fx-fill: blue;*!
 }
 
 TextField {
@@ -244,8 +251,8 @@ TextField {
     -fx-background-color: #333333;
     -fx-border-style: solid;
     -fx-border-width: 0px;
-}
-
+}*/
+/*
 .scroll-bar {
     -fx-background-color: #000000;
 }
@@ -267,7 +274,7 @@ Slider:vertical .thumb {
 .scroll-bar > .increment-button > .increment-arrow,
 .scroll-bar > .decrement-button > .decrement-arrow {
     -fx-background-color: #222222;
-}
+}*/
 
 
 .CANNOT_EDIT_CHILDREN {
@@ -354,7 +361,7 @@ BrainStormPane {
     -fx-fill: darkgrey;
 }
 
-
+/*
 ChoiceBox {
     -fx-background-color: #222222;
     -fx-text-fill: #0795c3;
@@ -399,10 +406,12 @@ WebView, .web-view {
 
 .default-color1.chart-line-symbol {
     -fx-background-color: CHART_COLOR_2, black;
-}
+}*/
 
 
 .greenBackground {
     -fx-background-color: green;
     /*-fx-text-fill: black;*/
 }
+
+
