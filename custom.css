@@ -26,6 +26,11 @@ NodePane /*TextField,
     /*-fx-border-color: blue;*/
 }
 
+/*otherwise when the BrainStormPane is focused (and not any particular textfield orr button), there's an annoying blue (actually background) around the pane)*/
+.scroll-pane:focused {
+    -fx-background-color: black;
+}
+
 .nodeTextField {
     -fx-background-color: #000000;
 }
