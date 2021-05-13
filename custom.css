@@ -150,6 +150,12 @@ BrainStormPane {
     -fx-fill: blue;
 }
 
+.whiteText {
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+
+
 .darkGreyText {
     -fx-text-fill: darkgrey;
     -fx-fill: darkgrey;
