@@ -166,3 +166,10 @@ BrainStormPane {
     -fx-background-color: green;
 }
 
+.greenBackground:selected {
+    -fx-background-color: green;
+}
+
+.greenBackground:focused {
+    -fx-background-color: green;
+}
