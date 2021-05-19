@@ -180,45 +180,10 @@ BrainStormPane {
     -fx-background-color: green;
 }
 
-/*
-Console {
-    -fx-background-insets: 0, 0;
-    -fx-padding: 0;
-    -fx-border-width: 0;
-    -fx-border-color: null;
-    -fx-background-insets: 0;
-    -fx-border-insets: 0;
-    !*-fx-border-color: yellow;*!
+.greenBackground:selected {
+    -fx-background-color: green;
 }
 
-Console:focused {
-    -fx-background-insets: 0, 0;
-    -fx-padding: 0;
-    -fx-border-width: 0;
-    -fx-border-color: null;
-    -fx-background-insets: 0;
-    -fx-border-insets: 0;
-    !*-fx-border-color: yellow*!;
+.greenBackground:focused {
+    -fx-background-color: green;
 }
-
-ConsoleTextFlow {
-    -fx-background-insets: 0, 0;
-    -fx-padding: 0;
-    -fx-border-width: 0;
-    -fx-border-color: null;
-    -fx-background-insets: 0;
-    -fx-border-insets: 0;
-    !*-fx-border-color: yellow*!
-}
-
-ConsoleTextFlow:focused {
-    -fx-background-insets: 0, 0;
-    -fx-padding: 0;
-    -fx-border-width: 0;
-    -fx-border-color: null;
-    -fx-background-insets: 0;
-    -fx-border-insets: 0;
-    !*-fx-border-color: yellow;*!
-}*/
-
-
