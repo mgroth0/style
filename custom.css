@@ -2,6 +2,20 @@
 /*It is possible to use the JavaFX class name as a type selector, however, such use is not recommended. For example, it is possible to specify styles for a ToggleButton using the syntax "ToggleButton { ... }". Such usage is not recommended because the name used to match the type selector is the actual concrete class name used in the JavaFX program. This class name can change in the case of subclassing. If the application were to subclass the ToggleButton class, these styles would no longer apply.
 */
 
+/*FINALLY stopped some focused boxes from blocking the border*/
+/*must be above some stuff below that further disables annoying focus changes*/
+.scroll-pane:focused,
+.split-pane:focused,
+.list-view:focused,
+.tree-view:focused,
+.table-view:focused,
+.tree-table-view:focused,
+.html-editor:contains-focus {
+    -fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-control-inner-background;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0, 0, 0;
+}
+
 /*TabPane,
 ListView,
 TableView,
@@ -28,7 +42,7 @@ NodePane /*TextField,
 
 /*otherwise when the BrainStormPane is focused (and not any particular textfield orr button), there's an annoying blue (actually background) around the pane)*/
 .scroll-pane:focused {
-    -fx-background-color: black;
+    -fx-background-color: transparent;
 }
 
 .nodeTextField {
@@ -165,4 +179,46 @@ BrainStormPane {
 .greenBackground {
     -fx-background-color: green;
 }
+
+/*
+Console {
+    -fx-background-insets: 0, 0;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-border-color: null;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    !*-fx-border-color: yellow;*!
+}
+
+Console:focused {
+    -fx-background-insets: 0, 0;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-border-color: null;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    !*-fx-border-color: yellow*!;
+}
+
+ConsoleTextFlow {
+    -fx-background-insets: 0, 0;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-border-color: null;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    !*-fx-border-color: yellow*!
+}
+
+ConsoleTextFlow:focused {
+    -fx-background-insets: 0, 0;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-border-color: null;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    !*-fx-border-color: yellow;*!
+}*/
+
 
