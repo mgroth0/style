@@ -27,9 +27,9 @@ HBox,
 Pane,
 .hbox,
 .vbox,*/
-BrainStormPane,
+BrainStormPane
     /*ControllableBrainStormPane,*/
-NodePane /*TextField,
+/*NodePane*/ /*TextField,
 .scroll-pane,
 .scroll-pane .content,*/
     /*ScrollPane*/
@@ -40,17 +40,35 @@ NodePane /*TextField,
     /*-fx-border-color: blue;*/
 }
 
+.scroll-pane > .viewport,
+ScrollPane,
+.scroll-pane .content,
+VBox,
+HBox,
+GridPane,
+FlowPane,
+.scroll-pane,
+NodePane,
+BrainStormPaneControl {
+    -fx-background-color: transparent;
+}
+
+.presentationMode {
+    -fx-background-color: linear-gradient(from 50% 50% to 95% 95%, #000000, #00004b);
+    /*-fx-background-color: radial-gradient(focus-angle 15deg , focus-distance 70% , center 70% 70% , radius 50% , blue, #000000);*/
+}
+
 /*otherwise when the BrainStormPane is focused (and not any particular textfield orr button), there's an annoying blue (actually background) around the pane)*/
 .scroll-pane:focused {
     -fx-background-color: transparent;
 }
 
 .nodeTextField {
-    -fx-background-color: #000000;
+    -fx-background-color: transparent;
 }
 
 .nodeTextField:focused {
-    -fx-background-color: #000000;
+    -fx-background-color: transparent;
 }
 
 
