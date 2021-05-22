@@ -29,9 +29,10 @@ Pane,
 .vbox,*/
 BrainStormPane
     /*ControllableBrainStormPane,*/
-/*NodePane*/ /*TextField,
-.scroll-pane,
-.scroll-pane .content,*/
+    /*NodePane*/
+    /*TextField,
+   .scroll-pane,
+   .scroll-pane .content,*/
     /*ScrollPane*/
 {
     /*-fx-background-color: transparent;*/
@@ -152,6 +153,12 @@ BrainStormPane {
     -fx-text-fill: orange;
     -fx-fill: orange; /*since I use text now not label, this is the one that matters*/
 }
+
+.rDatetag {
+    -fx-text-fill: yellow;
+    -fx-fill: yellow; /*since I use text now not label, this is the one that matters*/
+}
+
 
 .flowTypeTag {
     -fx-text-fill: purple;
