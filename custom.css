@@ -66,6 +66,7 @@ BrainStormPaneControl {
 
 .nodeTextField {
     -fx-background-color: transparent;
+    /*-fx-text-fill: white;*/
 }
 
 .nodeTextField:focused {
@@ -212,3 +213,24 @@ BrainStormPane {
 .greenBackground:focused {
     -fx-background-color: green;
 }
+
+/*rtfx*/
+.caret {
+    /* set the blink rate of the area */
+    /*-rtfx-blink-rate: <duration>;*/
+    -fx-stroke: white;
+}
+
+.transparentSelection .selection {
+    -fx-fill: transparent;
+}
+.transparentSelection .caret {
+    -fx-stroke: transparent;
+}
+
+/*working selector for richtextfx .text-flow*/
+.paragraph-text {
+}
+
+/*working selector for richtextfx .text*/
+.styled-text-area .text {}
