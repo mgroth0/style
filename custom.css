@@ -67,6 +67,7 @@ BrainStormPaneControl {
 .nodeTextField {
     -fx-background-color: transparent;
     /*-fx-text-fill: white;*/
+    /*-fx-border-color: yellow;*/
 }
 
 .nodeTextField:focused {
