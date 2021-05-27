@@ -54,6 +54,11 @@ BrainStormPaneControl {
     -fx-background-color: transparent;
 }
 
+.flowablePresentationMode {
+    -fx-background-color: linear-gradient(from 50% 50% to 95% 95%, #000000, #004b00);
+    /*-fx-background-color: radial-gradient(focus-angle 15deg , focus-distance 70% , center 70% 70% , radius 50% , blue, #000000);*/
+}
+
 .presentationMode {
     -fx-background-color: linear-gradient(from 50% 50% to 95% 95%, #000000, #00004b);
     /*-fx-background-color: radial-gradient(focus-angle 15deg , focus-distance 70% , center 70% 70% , radius 50% , blue, #000000);*/
@@ -225,6 +230,7 @@ BrainStormPane {
 .transparentSelection .selection {
     -fx-fill: transparent;
 }
+
 .transparentSelection .caret {
     -fx-stroke: transparent;
 }
@@ -234,4 +240,5 @@ BrainStormPane {
 }
 
 /*working selector for richtextfx .text*/
-.styled-text-area .text {}
+.styled-text-area .text {
+}
