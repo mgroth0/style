@@ -166,6 +166,11 @@ BrainStormPane {
     -fx-fill: yellow; /*since I use text now not label, this is the one that matters*/
 }
 
+.eDatetag {
+    -fx-text-fill: pink;
+    -fx-fill: pink; /*since I use text now not label, this is the one that matters*/
+}
+
 
 .flowTypeTag {
     -fx-text-fill: purple;
